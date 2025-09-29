@@ -15,13 +15,13 @@ export class ProductsController {
 
   @Get()
   findAll(@Query() paginationDto:PaginationDto ) {
-    console.log(paginationDto);
+    //console.log(paginationDto);
     return this.productsService.findAll(paginationDto);
   }
 
   @Get(':term') //queremos bucar tanot por el slug como por el ID
   findOne(@Param('term') term: string) {
-    return this.productsService.findOne(term);
+    return this.productsService.findONEPlain(term);
   }
 
   @Patch(':id')

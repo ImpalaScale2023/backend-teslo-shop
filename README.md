@@ -18,3 +18,13 @@ yarn add class-validator class-transformer
 nest g module common
 yarn add uuid
 yarn add -D  @types/uuid
+nest g res files --no-spec
+yarn add -D  @types/multer
+yarn add  @nestjs/serve-static
+
+
+
+## TEslo Ejecutar Seed
+```
+http://localhost:3000/api/seed
+```

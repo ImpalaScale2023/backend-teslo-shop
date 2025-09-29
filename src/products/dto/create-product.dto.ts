@@ -36,4 +36,10 @@ export class CreateProductDto {
     @IsOptional()
     tags:string[]
 
+    @IsString({each:true})   //todos su elementos deben ser string
+    @IsArray()
+    @IsOptional()
+    images?:string[]
+
+
 }
