@@ -21,7 +21,14 @@ yarn add -D  @types/uuid
 nest g res files --no-spec
 yarn add -D  @types/multer
 yarn add  @nestjs/serve-static
-
+nest g res auth --no-spec
+yarn add bcrypt
+yarn add -D @types/bcrypt
+yarn add @nestjs/passport passport
+yarn add @nestjs/jwt passport-jwt
+yarn add -D @types/passport-jwt
+nest g gu auth/guards/user-role
+nest g d auth/decorators/roleProtected --no-spec
 
 
 ## TEslo Ejecutar Seed
