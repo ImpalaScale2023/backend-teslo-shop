@@ -29,6 +29,7 @@ yarn add @nestjs/jwt passport-jwt
 yarn add -D @types/passport-jwt
 nest g gu auth/guards/user-role
 nest g d auth/decorators/roleProtected --no-spec
+yarn add @nestjs/swagger
 
 
 ## TEslo Ejecutar Seed
