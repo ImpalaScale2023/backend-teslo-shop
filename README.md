@@ -31,6 +31,14 @@ nest g gu auth/guards/user-role
 nest g d auth/decorators/roleProtected --no-spec
 yarn add @nestjs/swagger
 
+nest g res messageWs --no-spec //se selecciona Websockets y CRUD No
+yarn add --save @nestjs/websockets @nestjs/platform-socket.io
+yarn add socket.io
+
+yarn create vite // crear otro project client en otra carpteta
+yarn add socket.io-client
+
+
 
 ## TEslo Ejecutar Seed
 ```
